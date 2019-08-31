@@ -1,0 +1,302 @@
+/* Input Validation */
+/*.form-control.error {
+  border: 2px solid #ce2033!important;
+}*/
+.tooltipster-default {
+  border-radius: 5px;
+  border: 2px solid #fff!important;
+  background: #e43b4b!important;
+  color: #fff;
+}
+/* Place holder */
+body {
+  font-family: Lato;
+}
+#registerC input::-webkit-input-placeholder,
+#registerS input::-webkit-input-placeholder,
+#login input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #8e8e8e;
+}
+#registerC input::-moz-placeholder,
+#registerS input::-moz-placeholder,
+#login input::-moz-placeholder {
+  font-weight: bold;
+  color: #8e8e8e;
+}
+#registerC input::-ms-input-placeholder,
+#registerS input::-ms-input-placeholder,
+#login input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #8e8e8e;
+}
+/* Bootstrap row for grid system*/
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+/* Simple CSS classes */  
+  .mt-6 {
+    margin-top: 5em!important;
+  }
+/* Navbar Styles */
+  .navbar-bg {
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    padding: 23px 110px 21px 123px;
+  }
+  .navbar-brand {
+    margin-top: -8px;
+    margin-right: 0px;
+  }
+  /* change the link color */
+  .navbar-bg .navbar-nav .nav-link {
+    color: #2a2a2a;
+  }
+  .nav-item {
+    cursor: pointer;
+  }
+  /* change the color of active or hovered links */
+  .navbar-bg .nav-item.active .nav-link,
+  .navbar-bg .nav-item .nav-link:active,
+  .navbar-bg .nav-item .nav-link:focus,
+  .navbar-bg .nav-item:hover .nav-link {
+    color: #5E81F4;
+  }
+  /* Navbar sign up button, add margin top */
+  #navbarDropdown a:hover {
+    background-color: #2b58ef!important;
+  }
+
+  @media (max-width: 767px) {
+    .navbar-brand > img {
+        margin-left: 4em;
+    }
+  }
+/* Section style */
+  .section-container {
+    padding: 0px 200px;
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  .gray-back {
+    background-color: #F5F8FA;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    padding: 40px;
+  }
+/* About Section */
+  .card-container {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  }
+
+  #about {
+    margin-top: 160px;
+  }
+
+  #about .card-container {
+    padding: 30px 40px 50px;
+  }
+
+  .border-top-blue {
+    border-top: 80px solid #F5F8FA;
+  }
+/* General Styles*/
+  /* Large title e.g Next Gen Data ... */
+  h4.title-large {
+    color: #2A2A2A;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 39px;
+    margin: auto;
+  }
+  /* Icon on about secion card */
+  img.icon {
+    position: absolute;
+    top: -20px;
+    left: 40px;
+  }
+  /* Small title e.g Data-Scientistss*/
+  h4.title-small {
+    color: #2A2A2A;
+    font-family: Lato;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 27px;
+  }
+  /* text block */
+  p.explanation {
+    color: #2A2A2A;
+    font-family: Lato;
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px
+  }
+  /* Buttons with blue outline and blue background */
+  .border-blue, .back-blue {
+    border-radius: 10px;
+  }
+  .border-blue {
+    border: 2px solid #5E81F4;
+    color: #5E81F4!important;
+  }
+
+  .back-blue {
+    background-color: #5E81F4;
+    color: white!important;
+  }
+  /* images on about section */
+  img.man {
+    margin-left: 30px;
+    /*height: 100%;*/
+  }
+  /* Contact form */
+  #booking .form-control,
+  #registerS .form-control {
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 100%;
+    height: auto!important;
+  }
+/* Login Page*/  
+  #login .card-container {
+    padding: 40px;
+    max-width: 410px;
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  #login .form-control {
+    border: 2px solid #5E81F4;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px 30px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #login a.back {
+    text-decoration: underline;
+    color: #5E81F4;
+  }
+/* Register scientist */
+  #registerS {
+    padding: 0px 50px;
+  }
+
+  #registerS .col-md-3>div{
+    position: relative;
+    background: white;
+    height: 100vh;
+  }
+
+  #circle {
+    width: 90%;
+    left: 5%;
+    border-radius: 50%;
+    background-color: #FAFAFA;
+    position: absolute;
+  }
+
+  #registerS img {
+    height: 50vh;
+    width: auto;
+    top: 25vh;
+    position: absolute;
+  }
+
+  #registerS .col-md-6 .align-center {
+    margin: auto;
+    max-width: 460px;
+    margin-top: 200px;
+  }
+
+/* Responsive */
+ @media(max-width:33.9em) {
+  /* navbar mobile responsive */
+    .navbar .collapse {max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;}
+    .navbar .navbar-brand {float:none;display: inline-block;}
+    .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+    .navbar .navbar-nav {float:none !important;}
+    .nav-item{width:100%;text-align:left;}
+    .navbar .collapse .dropdown-menu {
+      position: relative;
+      float: none;
+      background:none;
+      border:none;
+    }
+
+    .navbar .collapse {
+      max-height: 300px!important;
+    }
+    .navbar-bg {
+      padding: 10px 50px;
+    }
+
+    .navbar-brand {
+      width: 100%;
+    }
+
+    .navbar {
+      padding: 10px 20px;
+    }
+    /* Navbar sign up button, add margin top */
+    ul.ml-auto li.nav-item {
+      width: 100%;
+    }
+    ul.ml-auto li.nav-item a {
+      width: 90%;
+      margin-top: 0px;
+    }
+    /* Navbar sign up button, add margin top */
+    ul.ml-auto .back-blue {
+      margin-top: 20px!important;
+    }
+    /* Nacbrappppppppppppp*/
+  /* home page mobile responsive */
+    /* step section arrow margin*/
+    #process .fa-chevron-right {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  /* login page mobile responsive*/
+    /* login as a company, add margin top*/
+    #login .col-md-6:nth-child(2) {
+      margin-top: 30px;
+    }
+  }
+  @media(max-width: 1024px) {
+    .section-container {
+      padding: 0px 15px;
+    }
+
+    #reg-dropdown {
+      width: 110%!important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-nav {
+      background: #fff!important;
+    }
+  }
+  
+  @media(max-width: 576px) {
+    #login .card-container {
+      margin-top: 0px;
+    }
+    /* register page, remove margin top on mobile */
+    #registerS .col-md-6 .align-center,
+    #registerC .col-md-6 .align-center {
+      margin-top: 120px;
+    }
+  }

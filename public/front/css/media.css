@@ -1,0 +1,246 @@
+@media (max-width: 768px) {
+    .logo-quant img {
+        width: 100%;
+        height: auto
+    }
+
+    .about-box {
+        flex-direction: column
+    }
+
+    .about-box .box-section {
+        width: 100%;
+        height: auto
+    }
+
+    .about-box .box-section:nth-child(1) {
+        margin: 0;
+        margin-bottom: 30px
+    }
+
+    .scroll-down {
+        top: 0;
+        bottom: 0
+    }
+
+    #about {
+        padding: 50px 0;
+        min-height: unset;
+        height: unset
+    }
+
+    .subscribe .subscribe-form .presentation h2 {
+        font-size: 36px
+    }
+
+    .subscribe .subscribe-form .presentation .form-subscribe {
+        width: 100%
+    }
+
+    .subscribe .subscribe-form .presentation button {
+        position: absolute;
+        width: 35%
+    }
+
+    .logo-quant h2, .content-box h3 {
+        font-size: 36px
+    }
+
+    .content-box input, .content-box .submit-about {
+        width: 80%
+    }
+
+    .swal2-title h2 {
+        font-size: 38px !important
+    }
+
+    .container-box {
+        padding: 0 15px;
+        flex-direction: column;
+        top: 50%;
+        background: rgba(0, 0, 0, .9)
+    }
+
+    .masthead-sistem {
+        background: rgba(0, 0, 0, .9);
+        padding-top: 85px;
+    }
+
+    .button-group-pills {
+        width: 100%
+    }
+
+    .client-section {
+        padding: 0 15px
+    }
+
+    .submit-box .btn-submit-box {
+        width: 60%
+    }
+
+    .button-group-pills .box-card {
+        margin-bottom: 35px
+    }
+
+    .box-row .btn-box-5, .box-row .btn-box-6, .box-row .btn-box-7, .box-row .btn-box-28, .box-row .btn-box-8, .box-row .btn-box-9 {
+        height: 60px;
+        line-height: 1.5
+    }
+
+    .box-row .btn-box-12, .box-row .btn-box-13, .box-row .btn-box-26, .box-row .btn-box-27, .box-row .btn-box-15, .box-row .btn-box-16, .box-row .btn-box-14, .box-row .btn-box-17 {
+        height: 50px
+    }
+
+    .box-row .btn-box-18, .box-row .btn-box-19, .box-row .btn-box-20, .box-row .btn-box-21, .box-row .btn-box-22, .box-row .btn-box-23 {
+        height: 50px
+    }
+
+    .navbar-nav {
+        background: #000
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 0;
+        text-align: center
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        margin: 0
+    }
+
+    .dropdown-item {
+        text-align: center;
+        padding: .25rem 0
+    }
+
+    .dashbord-campaings {
+        padding: 0 15px
+    }
+
+    .block-1 .item-block p, .block-4 .item-status p, .block-2 .item-status p {
+        display: none
+    }
+
+    .masthead-status .container-quant-sistem .client-section .active-1 h3 {
+        font-size: 26px
+    }
+
+    .masthead-status .container-quant-sistem .client-section .active-2 p {
+        padding-top: 3px
+    }
+
+    .block-1 .item-block p, .block-3 .item-block p, .block-4 .item-status p, .block-2 .item-status p {
+        font-size: 14px
+    }
+
+    .pref-button {
+        margin-bottom: 85px
+    }
+
+    .submit-box {
+        bottom: 0;
+        padding-bottom: 35px
+    }
+
+    .container-box .pref-group {
+        display: block
+    }
+}
+
+@media (max-width: 320px) {
+    .subscribe .subscribe-form .presentation h2, .content-box h3 {
+        font-size: 30px
+    }
+
+    .content-box a, .subscribe .subscribe-form .presentation span {
+        font-size: 16px
+    }
+
+    .subscribe .subscribe-form .presentation input {
+        font-size: 14px
+    }
+
+    .subscribe .subscribe-form .presentation button {
+        width: 38%;
+        font-size: 14px
+    }
+
+    .logo-quant h2, .content-box h3 {
+        font-size: 26px
+    }
+
+    .navbar-brand img {
+        width: 150px
+    }
+
+    .client-section {
+        top: 15%
+    }
+
+    .client-section h3 {
+        font-size: 26px
+    }
+
+    .client-section p {
+        font-size: 14px
+    }
+
+    .container-box {
+        top: 40%
+    }
+
+    .btn-box-4 span {
+        font-size: 14px !important
+    }
+
+    .dashbord-campaings {
+        top: 25%
+    }
+
+    .add-competition .create .add-button i {
+        font-size: 36px
+    }
+
+    .add-competition .create .add-button {
+        font-size: 20px
+    }
+
+    .block-1 .item-block p, .block-3 .item-block p, .block-4 .item-status p, .block-2 .item-status p {
+        font-size: 14px
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .content-box input, .content-box .submit-about {
+        width: 50%
+    }
+
+    .subscribe .subscribe-form .presentation .form-subscribe {
+        width: 450px
+    }
+
+    .container-box {
+        top: 31%;
+        justify-content: center;
+        align-items: center
+    }
+
+    .client-section {
+        top: 10%
+    }
+
+    .button-group-pills {
+        width: 70%
+    }
+
+    .container-box .pref-group {
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) {
+    #about {
+        height: auto !important
+    }
+}

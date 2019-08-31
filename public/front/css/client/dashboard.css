@@ -1,0 +1,80 @@
+textarea {
+  box-sizing: border-box;
+  border: 1px solid #E9E9E9!important;
+  border-radius: 20px!important;
+  /*background-color: #FEFEFE!important;*/
+  box-shadow: 0 5px 6px 0 rgba(0,0,0,0.05);
+}
+
+/* Space style end */
+.pl-0 {
+  padding-left: 0px!important;
+}
+
+.px-0 {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+/* Custom section styles */
+
+.container-purple h4 {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0px 0px 15px;
+}
+
+.campaign-header h4 {
+  color: #6F6ED8;
+}
+
+.container-white {
+  padding: 21px 30px;
+}
+
+.container-white label {
+  margin-right: 20px;
+}
+
+.campaign-name {
+  border: none;
+  width: 300px;
+}
+
+.months {
+  font-size: 13px;
+  color: #A8BAC8;
+  margin: auto 0px auto 15px;
+  font-weight: normal!important;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 1px solid #5E81F4;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.1);
+  padding: 5px 0px;
+  text-align: center;
+  /*width: auto;*/
+}
+
+#upload-doc {
+  margin-top: 20px;
+}
+
+label.radio {
+  border-bottom: 1px solid #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media(max-width: 42em) {
+  .col-md-8 {
+    margin-top: 20px;
+  }
+
+  .col-md-4 {
+    padding-right: 0px!important;
+  }
+}
+
+

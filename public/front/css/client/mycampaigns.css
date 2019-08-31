@@ -1,0 +1,28 @@
+.container-white {
+  padding: 31px 30px;
+}
+.container-white p {
+  margin: 0px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container-white .flex {
+  /*margin-left: 40px;*/
+}
+
+.container-white .flex i {
+    font-size: 20px;
+}
+
+.blue-border {
+	border-left: 10px solid #5E81F4;
+	box-shadow: 0 5px 6px 0 rgba(0,0,0,0.05);
+}
+
+@media(max-width: 42em) {
+  .col-sm-12 {
+    margin-top: 20px;
+  }
+}

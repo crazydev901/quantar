@@ -1,0 +1,323 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+
+/* Space Styles */
+  .padding-side-0 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .fit-width {
+    display: table;
+  }
+/* Space End*/
+
+/* Sidebar Styles*/
+  /* Layout */
+  .s-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .s-layout__content {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #F5F8FA;
+  }
+
+  /* Sidebar */
+  .s-sidebar__trigger {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4em;
+    background: #fff;
+  }
+
+  .s-sidebar__trigger > .bars {
+    display: inline-block;
+    margin: 1.5em 0 0 1.5em;
+    color: black;
+  }
+  .s-sidebar__trigger > .mobile-logo {
+    margin: 1.5em 0 0 5em;
+  }
+  .s-sidebar__nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: -20em;
+    overflow: hidden;
+    transition: all .3s ease-in;
+    width: 20em;
+    height: 100%;
+    background: #FFF;
+    color: #A8BAC8;
+    box-shadow: 3px 0 2px 0 rgba(0,0,0,0.05);
+  }
+
+  .s-sidebar__nav:hover,
+  .s-sidebar__nav:focus,
+  .s-sidebar__trigger:focus + .s-sidebar__nav,
+  .s-sidebar__trigger:hover + .s-sidebar__nav {
+    /*left: 0;*/
+  }
+
+  .s-sidebar__nav ul {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 20em;
+  }
+
+  .s-sidebar__nav ul li {
+    width: 100%;
+  }
+
+  .s-sidebar__nav-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 4em;
+    left: 2em;
+  }
+
+  .s-sidebar__nav-link em {
+    position: absolute;
+    top: 50%;
+    left: 4em;
+    transform: translateY(-50%);
+  }
+
+  .s-sidebar__nav-link:hover, .s-sidebar__nav-active {
+    background: #5E81F4;
+    box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.1);
+    color: #FFF;
+  }
+
+  .s-sidebar_logo > i,
+  .s-sidebar__nav-link > i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+  }
+
+  .s-sidebar_logo > i::before,
+  .s-sidebar__nav-link > i::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .s-sidebar_logo {
+    position: absolute;
+    padding: 2em 2em 2em 3em;
+    left: 2em;
+    text-align: center;
+  }
+  .s-sidebar_logo:hover {
+    text-decoration: none;
+  }
+
+  .s-sidebar_logo img {
+    width: 105px;
+    left: 4em;
+    position: absolute;
+    top: 22px;
+  }
+  /* Sidebar Mobile Responsive */
+  @media(max-width: 42em) {
+    .s-layout__content {
+      margin-top: 4em;
+      padding-right: 7px;
+      padding-left: 8px;
+    }
+  }
+  @media (min-width: 42em) {
+    .s-layout__content {
+      margin-left: 4em;
+    }
+    
+    /* Sidebar */
+    .s-sidebar__trigger {
+      width: 4em;
+    }
+    
+    .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+    }
+    
+    .s-sidebar__nav:hover,
+    .s-sidebar__nav:focus,
+    .s-sidebar__trigger:hover + .s-sidebar__nav,
+    .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 20em;
+    }
+  }
+
+  @media (min-width: 68em) {
+    .s-layout__content {
+      margin-left: 20em;
+    }
+    
+    /* Sidebar */
+    .s-sidebar__trigger {
+      display: none
+    }
+    
+    .s-sidebar__nav {
+      width: 20em;
+    }
+  }
+/* Sidebar End */
+
+/* Radio Button Styles*/
+  /* The radio */
+  .radio {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+  }
+
+  /* Hide the browser's default radio button */
+  .radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkround {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff ;
+    border-color: #5E81F4;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .radio input:checked ~ .checkround {
+    background-color: #fff;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkround:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .radio input:checked ~ .checkround:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .radio .checkround:after {
+    left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #5E81F4;
+  }
+/* Radio End*/
+/* General Styles*/
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .title {
+    padding: 40px 0px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .content-container {
+    max-width: 1140px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
+  .container-purple {
+    padding: 30px 36px;
+    background-color: #DFE0FF;
+    border-radius: 20px;
+  }
+
+  .container-white {
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+
+  .container-white h4, .container-white label {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .container-white p {
+    font-size: 15px;
+  }
+
+  .container-white h4 {
+    margin-bottom: 0px!important;
+  }
+
+  .btn-primary, .btn-default {
+    border-radius: 10px;
+  }
+
+  .btn-default {
+    box-sizing: border-box;
+    border: 2px solid #5E81F4;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.1);
+  }

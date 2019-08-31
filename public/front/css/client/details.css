@@ -1,0 +1,26 @@
+/* Custom section styles */
+.container-white {
+  padding: 21px 30px;
+}
+
+.change-btn-mobile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.change-btn-mobile a, .change-btn-full a {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .change-btn-mobile {
+    display: block;
+  }
+
+  .change-btn-full {
+    display: none;
+  }
+}
